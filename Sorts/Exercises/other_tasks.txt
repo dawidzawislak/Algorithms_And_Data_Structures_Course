@@ -1,0 +1,25 @@
+(1) Dana jest tab A rozmiaru n z elementami z zakresu od 0 do n^2-1. O(n)
+Rozw.:
+posortowac radix, najpierw po %n a potem po //n (radix 2-pozycyjny)
+
+(2)
+# Dana tab A rozmiaru n. Elementy z A należą do zbioru B, gdzie |B| = logn
+# Chcemy posortować A jak najszybciej.
+
+Rozw.:
+1) Odtwarzamy B. Utrzymujemy B w porządku rosnącym.
+-> czy el z A jest w B - binsearch O(n * log logn)
+-> wstawianie O(log n * log n)
+-------
+O(n * log logn)
+
+2) Mapujemy dane w A na indeksy z B. O(n * log logn) - przejscie po a i bin search w b
+
+3) Sort A. O(n + logn)
+
+4) Mapowanie z powrotem O(n)
+
+
+Złożoność: O(n * log logn)
+
+(3)
