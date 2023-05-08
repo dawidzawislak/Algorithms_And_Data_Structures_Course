@@ -7,7 +7,7 @@ def Find(x):
   global parent
 
   if parent[x] != x:
-    parent[x] =  Find(parent[x])
+    x =  Find(parent[x])
   
   return x
 
